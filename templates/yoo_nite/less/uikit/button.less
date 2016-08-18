@@ -1,0 +1,174 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+//
+// Component: Button
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@button-height:                                 @global-height;
+@button-mini-height:                            @global-mini-height;
+@button-small-height:                           @global-small-height;
+@button-large-height:                           @global-large-height;
+
+@button-line-height:                            @global-height;
+@button-mini-line-height:                       @global-mini-height;
+@button-small-line-height:                      @global-small-height;
+@button-large-line-height:                      @global-large-height;
+
+@button-mini-font-size:                         round(@global-font-size * 0.78); // 11px
+@button-small-font-size:                        round(@global-font-size * 0.85); // 12px
+@button-large-font-size:                        round(@global-font-size * 1.14); // 16px
+
+@button-font-size:                              round(@global-font-size * 0.93); // 14px
+@button-background:                             @global-highlight-background;
+@button-color:                                  @global-color;
+@button-hover-background:                       @global-highlight-hover-background;
+@button-hover-color:                            @global-hover-color;
+@button-active-background:                      @global-highlight-hover-background;
+@button-active-color:                           @global-contrast-color;
+
+@button-primary-background:                     @global-primary-background;
+@button-primary-color:                          @global-primary-color;
+@button-primary-hover-background:               lighten(@global-primary-background, 6%);
+@button-primary-hover-color:                    @global-primary-color;
+@button-primary-active-background:              desaturate(darken(@button-primary-background, 6%), 20%);
+@button-primary-active-color:                   @global-primary-link-color;
+
+@button-success-background:                     @global-success-background;
+@button-success-color:                          @global-contrast-color;
+@button-success-hover-background:               lighten(@global-success-background, 6%);
+@button-success-hover-color:                    @global-contrast-color;
+@button-success-active-background:              desaturate(darken(@button-success-background, 6%), 10%);
+@button-success-active-color:                   fade(@global-contrast-color, 85%);
+
+@button-danger-background:                      @global-danger-background;
+@button-danger-color:                           @global-contrast-color;
+@button-danger-hover-background:                lighten(@global-danger-background, 6%);
+@button-danger-hover-color:                     @global-contrast-color;
+@button-danger-active-background:               desaturate(darken(@button-danger-background, 6%), 10%);
+@button-danger-active-color:                    fade(@global-contrast-color, 85%);
+
+@button-disabled-background:                    @global-light-background;
+@button-disabled-color:                         @global-muted-color;
+
+@button-link-color:                             @global-link-color;
+@button-link-hover-color:                       @global-link-hover-color;
+@button-link-disabled-color:                    @global-muted-color;
+
+
+//
+// New
+//
+
+@button-border-radius:                          @global-border-radius;
+@button-text-transform:                         @global-text-transform;
+
+
+// Component
+// ========================================================================
+
+.hook-button() {
+    border-radius: @button-border-radius;
+    font-weight: inherit;
+    text-transform: @button-text-transform;
+    letter-spacing: @global-letter-spacing;
+}
+
+.hook-button-hover() {}
+
+.hook-button-active() {}
+
+
+// Color modifiers
+// ========================================================================
+
+//
+// Modifier: `uk-button-primary`
+//
+
+.hook-button-primary() {}
+
+.hook-button-primary-hover() {}
+.hook-button-primary-active() {}
+
+//
+// Modifier: `uk-button-success`
+//
+
+.hook-button-success() {}
+
+.hook-button-success-hover() {}
+.hook-button-success-active() {}
+
+//
+// Modifier: `uk-button-danger`
+//
+
+.hook-button-danger() {}
+
+.hook-button-danger-hover() {}
+.hook-button-danger-active() {}
+
+
+// Disabled state
+// ========================================================================
+
+.hook-button-disable() {}
+
+
+// Modifier: `uk-button-link`
+// ========================================================================
+
+.hook-button-link() {
+    font-size: @button-font-size;
+    font-weight: inherit;
+    text-transform: @button-text-transform;
+    letter-spacing: @global-letter-spacing;
+}
+
+
+// Size modifiers
+// ========================================================================
+
+.hook-button-large() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-button-misc() {
+
+    /* Sub-object `uk-button-group`
+     ========================================================================== */
+
+    /*
+     * Reset border-radius
+     */
+
+    .uk-button-group > .uk-button:not(:first-child):not(:last-child),
+    .uk-button-group > div:not(:first-child):not(:last-child) .uk-button { border-radius: 0; }
+
+    .uk-button-group > .uk-button:first-child,
+    .uk-button-group > div:first-child .uk-button {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .uk-button-group > .uk-button:last-child,
+    .uk-button-group > div:last-child .uk-button {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    /*
+     * Collapse border
+     */
+
+    .uk-button-group > .uk-button:nth-child(n+2),
+    .uk-button-group > div:nth-child(n+2) .uk-button { margin-left: -1px; }
+
+}

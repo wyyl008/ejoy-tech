@@ -1,0 +1,107 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+//
+// Component: Dropdown
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@dropdown-z-index:                              (@global-z-index + 20);
+@dropdown-margin-top:                           10px;
+@dropdown-background:                           @global-dark-background;
+@dropdown-color:                                @global-color;
+@dropdown-animation:                            uk-slide-bottom;
+
+@dropdown-divider-border:                       @global-border;
+@dropdown-divider-border-width:                 @global-border-width;
+
+@dropdown-navbar-margin:                        @dropdown-navbar-nose-size;
+@dropdown-navbar-background:                    @global-dark-background;
+@dropdown-navbar-color:                         @global-color;
+@dropdown-navbar-animation:                     uk-slide-bottom;
+
+//
+// New
+//
+
+@dropdown-border-radius:                        @global-border-radius;
+
+@dropdown-navbar-nose-size:                     18px;
+@dropdown-navbar-nose-border-radius:            @global-border-radius;
+
+@dropdown-navbar-divider-border:                @dropdown-divider-border;
+
+@dropdown-navbar-panel-link-color:              @global-link-color;
+@dropdown-navbar-panel-link-hover-color:        @global-link-hover-color;
+
+
+// Component
+// ========================================================================
+
+.hook-dropdown() { border-radius: @dropdown-border-radius; }
+
+
+// Modifier: `uk-dropdown-navbar`
+// ========================================================================
+
+.hook-dropdown-navbar() {
+
+    &:before {
+        display: block;
+        content: "";
+        position: absolute;
+        top: -(@dropdown-navbar-nose-size / 2.3);
+        left: @dropdown-navbar-nose-size * 1.2;
+        width: @dropdown-navbar-nose-size;
+        height: @dropdown-navbar-nose-size;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+        border-radius: @dropdown-navbar-nose-border-radius;
+        background: @dropdown-navbar-background;
+    }
+
+}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-dropdown-misc() {
+
+    /* uk-dropdown nose */
+    .uk-dropdown-center {
+        &:before { left: 48%; }
+    }
+
+    .uk-dropdown-flip {
+        &:before {
+            left: auto;
+            right: @dropdown-navbar-nose-size * 1.2;
+        }
+    }
+
+    /* Grid and panel in dropdown
+     ========================================================================== */
+
+     /* uk-dropdown-navbar panel link color */
+    .uk-dropdown-navbar {
+        .uk-panel {
+            > a:not([class]) {
+                color: @dropdown-navbar-panel-link-color;
+
+                &:hover { color: @dropdown-navbar-panel-link-hover-color; }
+            }
+        }
+    }
+
+    /* Only tablets and desktops */
+    @media (min-width: @breakpoint-medium) {
+
+        .uk-dropdown-navbar:not(.uk-dropdown-stack) > .uk-grid > [class*='uk-width-']:nth-child(n+2) { border-left-color: @dropdown-navbar-divider-border; }
+
+    }
+}

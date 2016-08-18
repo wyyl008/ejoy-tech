@@ -1,0 +1,126 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+//
+// Component: Base
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@base-body-background:                          @global-background;
+@base-body-font-family:                         'Roboto Condensed', Helvetica, Arial, sans-serif;
+@base-body-font-weight:                         @global-font-weight;
+@base-body-font-size:                           @global-font-size;
+@base-body-line-height:                         @global-line-height;
+@base-body-color:                               @global-color;
+
+@base-link-color:                               @global-link-color;
+@base-link-hover-color:                         @global-link-hover-color;
+@base-em-color:                                 @global-secondary-color;
+@base-ins-background:                           fade(@global-primary-background, 20%);
+@base-ins-color:                                @global-link-hover-color;
+@base-mark-background:                          fade(@global-primary-background, 20%);
+@base-mark-color:                               @global-link-color;
+@base-selection-background:                     fade(@global-color, 45%);
+@base-selection-color:                          @global-highlight-color;
+
+@base-margin-vertical:                          @global-margin;
+
+@base-heading-color:                            @global-link-color;
+@base-heading-margin-top:                       @global-large-margin;
+@base-heading-font-family:                      'Roboto Condensed', Helvetica, Arial, sans-serif;
+@base-heading-font-weight:                      @global-heading-font-weight;
+@base-heading-text-transform:                   @global-text-transform;
+@base-heading-margin-top:                       @global-large-margin;
+@base-h1-font-size:                             round(@global-font-size * 2.4); // 36px
+@base-h1-line-height:                           round(@base-h1-font-size * 1.16); // 42px
+@base-h2-font-size:                             round(@global-font-size * 1.86); // 28px
+@base-h2-line-height:                           round(@base-h2-font-size * 1.14); // 32px
+@base-h3-font-size:                             round(@global-font-size * 1.6); // 24px
+@base-h3-line-height:                           round(@base-h3-font-size * 1.08); // 26px
+@base-h4-font-size:                             round(@global-font-size * 1.2); // 18px
+@base-h4-line-height:                           round(@base-h4-font-size * 1.22); // 22px
+@base-h5-font-size:                             round(@global-font-size * 1.06); // 16px
+@base-h5-line-height:                           round(@base-h4-font-size * 1.25); // 20px
+@base-h6-font-size:                             @global-font-size; // 15px
+@base-h6-line-height:                           @global-line-height; // 22px
+
+@base-hr-border:                                @global-border;
+@base-hr-border-width:                          @global-border-width;
+
+@base-blockquote-border:                        @global-border;
+@base-blockquote-small-color:                   @global-muted-color;
+@base-blockquote-font-size:                     round(@global-font-size * 1.06); // 16px
+@base-blockquote-line-height:                   round(@base-blockquote-font-size * 1.37); // 22px
+
+@base-code-color:                               #75a991;
+@base-code-font-size:                           round(@global-font-size * 0.8); // 12px
+
+@base-pre-background:                           @global-light-background;
+@base-pre-color:                                @global-hover-color;
+@base-pre-font-size:                            round(@global-font-size * 0.8); // 12px
+@base-pre-line-height:                          round(@base-pre-font-size * 1.12); // 18px
+
+
+//
+// New
+//
+
+@base-code-padding:                             2px;
+@base-code-background:                          @global-light-background;
+@base-code-border-radius:                       @global-border-radius;
+
+@base-pre-border-radius:                        @global-border-radius;
+
+@base-h2-color:                                 @global-highlight-color;
+@base-h3-color:                                 @global-highlight-color;
+@base-h4-color:                                 @global-hover-color;
+@base-h6-color:                                 @global-color;
+
+
+// Body
+// ========================================================================
+
+.hook-base-body() {}
+
+
+// Code and preformatted text
+// ========================================================================
+
+.hook-base-code() {
+    padding: @base-code-padding (@base-code-padding * 2);
+    border-radius: @base-code-border-radius;
+    background: @base-code-background;
+}
+
+.hook-base-code-reset() {
+    padding: 0;
+    border: 0;
+    background: transparent;
+}
+
+.hook-base-pre() {
+    border-radius: @base-pre-border-radius;
+    background: @base-pre-background;
+}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-base-misc() {
+
+    /* Headlines */
+    h1, h2, h3, h4, h5, h6 { letter-spacing: @global-letter-spacing; }
+
+    h2, .uk-h2 { color: @base-h2-color; }
+    h3, .uk-h3 { color: @base-h3-color; }
+    h4, .uk-h4 { color: @base-h4-color; }
+    h6, .uk-h6 { color: @base-h6-color; }
+
+    /* Bold Text */
+    strong, dt, th { font-weight: @global-bold-font-weight; }
+
+}

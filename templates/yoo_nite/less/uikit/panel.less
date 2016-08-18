@@ -1,0 +1,151 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+//
+// Component: Panel
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@panel-title-margin-bottom:                     @global-margin;
+@panel-title-font-size:                         round(@global-font-size * 1.6); // 24px
+@panel-title-line-height:                       round(@panel-title-font-size * 1.08); // 26px
+@panel-title-font-weight:                       @global-heading-font-weight;
+@panel-title-color:                             @global-hover-color;
+@panel-title-text-transform:                    @global-text-transform;
+
+@panel-box-padding:                             @global-margin;
+@panel-box-background:                          @global-light-background;
+@panel-box-color:                               @global-color;
+@panel-box-title-color:                         @global-highlight-color;
+@panel-box-badge-top:                           @global-margin;
+@panel-box-badge-right:                         @panel-box-badge-top;
+
+@panel-box-primary-background:                  @global-primary-background;
+@panel-box-primary-color:                       @global-primary-color;
+@panel-box-primary-title-color:                 @global-primary-color;
+
+@panel-box-secondary-background:                @global-dark-background;
+@panel-box-secondary-color:                     @global-color;
+@panel-box-secondary-title-color:               @global-hover-color;
+
+@panel-header-title-border:                     @global-border;
+@panel-header-title-border-width:               @global-border-width;
+@panel-header-title-color:                      @global-highlight-color;
+
+@panel-divider-gutter:                          @global-grid-gutter;
+@panel-divider-gutter-large:                    @global-grid-large-gutter;
+@panel-divider-border:                          @global-border;
+@panel-divider-border-width:                    @global-border-width;
+
+
+//
+// New
+//
+
+@panel-border-radius:                           @global-border-radius;
+
+@panel-box-primary-button-background:           #2d120e;
+@panel-box-primary-form-background:             #cc4e37;
+@panel-box-primary-form-placeholder-color:      #ffc9b6;
+
+
+// Sub-object: `uk-panel-title`
+// ========================================================================
+
+.hook-panel-title() {}
+
+
+// Sub-object: `uk-panel-badge`
+// ========================================================================
+
+.hook-panel-badge() {}
+
+
+// Modifier: `uk-panel-box`
+// ========================================================================
+
+.hook-panel-box() { border-radius: @panel-border-radius; }
+
+//
+// Sub-modifier: `uk-panel-box-primary`
+//
+
+.hook-panel-box-primary() {
+
+    /* link color */
+    > a:not([class]),
+    > :not([class*='uk-nav']) a:not([class]) { color: @global-primary-link-color; }
+
+    > a:not([class]):hover,
+    > :not([class*='uk-nav']) a:not([class]):hover { color: @global-primary-link-hover-color; }
+
+    /* uk-button style */
+    .uk-button {
+        background: @global-primary-color;
+        color: @global-primary-background;
+
+        &:hover {
+            background: fade(@global-primary-color, 90%);
+            color: @global-primary-background;
+        }
+    }
+
+    /* uk-button-primary */
+    .uk-button-primary {
+        background: @panel-box-primary-button-background;
+
+        &:hover { background: fade(@panel-box-primary-button-background, 80%); }
+    }
+
+    /* uk-form input fields */
+    .uk-form input:not([type]),
+    .uk-form input[type="text"],
+    .uk-form input[type="password"],
+    .uk-form input[type="email"] {
+        border: none;
+        background: @panel-box-primary-form-background;
+        color: fade(@global-primary-color, 85%);
+
+        /* Focus state */
+        &:focus {
+            background: darken(@panel-box-primary-form-background, 3%);
+            color: @global-primary-color;
+        }
+
+    }
+
+    /* uk-form placeholder */
+    .uk-form :-ms-input-placeholder { color: @panel-box-primary-form-placeholder-color !important; }
+    .uk-form ::-moz-placeholder { color: @panel-box-primary-form-placeholder-color; }
+    .uk-form ::-webkit-input-placeholder { color: @panel-box-primary-form-placeholder-color; }
+
+    /* uk-list-line */
+    .uk-list-line > li:nth-child(n+2) { border-top-color: fade(@global-primary-color, 15%); }
+
+}
+
+//
+// Sub-modifier: `uk-panel-box-secondary`
+//
+
+.hook-panel-box-secondary() {}
+
+
+// Modifier: `uk-panel-header`
+// ========================================================================
+
+.hook-panel-header() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-panel-misc() {
+
+    .uk-panel-box .uk-panel-teaser,
+    .uk-panel-box .uk-panel-teaser img { border-radius: @panel-border-radius @panel-border-radius 0 0; }
+
+}

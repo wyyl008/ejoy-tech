@@ -1,0 +1,200 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+@import 'https://fonts.googleapis.com/css?family=Glegoo';
+@import 'https://fonts.googleapis.com/css?family=Roboto:400,300,700';
+
+
+// Global variables
+// ========================================================================
+
+
+@global-body-style:                            'ruby';
+@global-border-image-style:                    'ruby';
+
+
+//
+// Text
+//
+
+@global-color:                                  #6d6762;
+@global-muted-color:                            #999089;
+@global-hover-color:                            #4d4845;
+@global-highlight-color:                        #2a2928;
+@global-contrast-color:                         #fff;
+
+@global-link-color:                             #d63b49;
+@global-link-hover-color:                       #9b1825;
+
+@global-primary-color:                          #f5f5ec;
+@global-primary-link-color:                     #ffd895;
+@global-primary-link-hover-color:               #680911;
+
+@global-secondary-color:                        #53af73;
+
+@global-info-color:                             #3ea2b7;
+@global-success-color:                          #7bb157;
+@global-warning-color:                          #e99b68;
+@global-danger-color:                           #d54f41;
+
+
+//
+// Backgrounds & Borders
+//
+
+@global-background:                             #f5f5ec;
+@global-light-background:                       #fffffb;
+@global-highlight-background:                   darken(@global-dark-background, 2%);
+@global-highlight-hover-background:             darken(@global-dark-background, 6%);
+@global-dark-background:                        #e7e7dd;
+
+@global-primary-background:                     #d63b49;
+@global-primary-hover-background:               lighten(@global-primary-background, 4%);
+
+@global-info-background:                        @global-info-color;
+@global-success-background:                     @global-success-color;
+@global-warning-background:                     @global-warning-color;
+@global-danger-background:                      @global-danger-color;
+
+@global-border:                                 #e7e7de;
+
+
+//
+// Component: Variables
+//
+// ========================================================================
+
+
+//
+// Base
+//
+
+@base-body-font-family:                         'Roboto', Helvetica, Arial, sans-serif;
+@base-heading-font-family:                      'Glegoo', Helvetica, Arial, sans-serif;
+
+@base-code-color:                               #3d73cb;
+
+@base-h3-color:                                 @global-color;
+
+
+//
+// Button
+//
+
+@button-active-color:                           @global-link-color;
+
+
+//
+// Dropdown
+//
+
+@dropdown-background:                           darken(@global-dark-background, 3%);
+
+@dropdown-navbar-background:                    @dropdown-background;
+
+@dropdown-search-background:                    @dropdown-background;
+
+@dropdown-divider-border:                       desaturate(darken(@dropdown-background, 5%), 5%);
+
+
+//
+// Form
+//
+
+@form-border:                                   @global-border;
+@form-background:                               #fff;
+@form-focus-border:                             darken(@global-dark-background, 10%);
+@form-focus-background:                         @form-background;
+
+@form-disabled-border:                          @global-dark-background;
+@form-disabled-background:                      fade(@global-dark-background, 70%);
+
+
+//
+// Icon
+//
+
+@icon-button-background:                        fade(@global-highlight-background, 50%);
+@icon-button-color:                             @global-color;
+
+
+//
+// Modal
+//
+
+@modal-background:                              fade(@global-highlight-color, 60%);
+
+
+//
+// Nav
+//
+
+@nav-dropdown-divider-border:                   @dropdown-divider-border;
+
+@nav-navbar-divider-border:                     @dropdown-divider-border;
+
+@nav-search-divider-border:                     @dropdown-divider-border;
+
+
+//
+// Navbar
+//
+
+@navbar-nav-font-family:                        'Roboto', Helvetica, Arial, sans-serif;
+
+@navbar-nav-hover-background:                   @theme-block-light-background;
+
+
+//
+// Overlay
+//
+
+@overlay-area-background:                       fade(@global-highlight-color, 60%);
+@overlay-area-icon-color:                       @global-contrast-color;
+
+@overlay-caption-background:                    fade(@global-highlight-color, 60%);
+@overlay-caption-color:                         @global-contrast-color;
+
+
+//
+// Panel
+//
+
+@panel-title-color:                             @global-color;
+
+@panel-box-primary-button-background:           #ffd895;
+@panel-box-primary-form-background:             #b02430;
+@panel-box-primary-form-placeholder-color:      #ffb4bb;
+
+
+//
+// Tooltip
+//
+
+@tooltip-background:                            @global-primary-background;
+@tooltip-color:                                 @global-contrast-color;
+
+
+//
+// Theme: Variables
+//
+// ========================================================================
+
+@theme-block-light-background:                  #f0f1e9;
+@theme-block-dark-background:                   #eaebe2;
+@theme-block-primary-background:                @global-primary-background;
+@theme-block-primary-dark-background:           desaturate(darken(@global-primary-background, 4%), 4%);
+
+@theme-light-border:                            darken(@global-border, 5%);
+@theme-primary-border:                          darken(@global-primary-background, 6%);
+
+@theme-toolbar-background:                      @theme-block-light-background;
+
+@theme-navbar-background:                       #f9faf5;
+
+@theme-fullscreen-heading-color:                @global-contrast-color;
+@theme-fullscreen-color:                        @global-contrast-color;
+@theme-fullscreen-border:                       fade(@global-contrast-color, 40%);
+
+@theme-nite-icon-hover-color:                   #303034;
+
+@theme-widgetkit-style:                         'default';

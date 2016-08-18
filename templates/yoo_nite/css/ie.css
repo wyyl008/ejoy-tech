@@ -1,0 +1,8 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+/* ========================================================================
+   Defines styles for Internet Explorer 8
+ ========================================================================== */
+
+/* Fixing scrollspy */
+[data-uk-scrollspy*='uk-animation-'] { opacity: 1; }

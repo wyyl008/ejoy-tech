@@ -1,0 +1,81 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+//
+// Component: Comment
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@comment-header-margin-bottom:                  @global-margin;
+
+@comment-avatar-margin-right:                   @global-margin;
+
+@comment-title-font-size:                       round(@global-font-size * 1.14); // 16px
+@comment-title-line-height:                     round(@comment-title-font-size * 1.37); // 22px
+
+@comment-meta-color:                            @global-muted-color;
+@comment-meta-font-size:                        round(@global-font-size * 0.78); // 11px
+@comment-meta-line-height:                      round(@comment-meta-font-size * 1.45); // 16px
+
+@comment-list-margin-top:                       @global-margin;
+
+
+//
+// New
+//
+
+@comment-border-width:                          @global-border-width;
+@comment-border-radius:                         @global-border-radius;
+@comment-border:                                @global-border;
+
+
+// Sub-object `uk-comment-header`
+// ========================================================================
+
+.hook-comment-header() {}
+
+
+// Sub-object `uk-comment-avatar`
+// ========================================================================
+
+.hook-comment-avatar() {}
+
+
+// Sub-object `uk-comment-title`
+// ========================================================================
+
+.hook-comment-title() {}
+
+
+// Sub-object `uk-comment-meta`
+// ========================================================================
+
+.hook-comment-meta() {}
+
+
+// Sub-object `uk-comment-primary`
+// ========================================================================
+
+.hook-comment-primary() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-comment-misc() {
+
+    .uk-comment {
+        padding: 15px;
+        border: @comment-border-width solid @comment-border;
+        border-radius: @comment-border-radius;
+    }
+
+    .uk-comment-primary {
+        border-color: @global-primary-background;
+
+        .uk-comment-title { color: @global-primary-background; }
+    }
+}

@@ -1,0 +1,122 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+@import 'https://fonts.googleapis.com/css?family=Roboto:400,300,700';
+
+
+// Global variables
+// ========================================================================
+
+@global-body-style:                            'turquoise';
+@global-border-image-style:                    'none';
+
+
+//
+// Text
+//
+
+@global-color:                                  #8d8a86;
+@global-muted-color:                            #54514d;
+@global-hover-color:                            #c1bcb6;
+@global-highlight-color:                        #fffce8;
+@global-contrast-color:                         #fff;
+
+@global-link-color:                             #79d7d8;
+@global-link-hover-color:                       #b9feff;
+
+@global-primary-color:                          #133434;
+@global-primary-link-color:                     #228989;
+@global-primary-link-hover-color:               #006a6a;
+
+@global-secondary-color:                        #dd6778;
+
+@global-info-color:                             #6ab5d4;
+@global-success-color:                          #93c96c;
+@global-warning-color:                          #e29059;
+@global-danger-color:                           #df535a;
+
+@global-letter-spacing:                         0;
+
+
+//
+// Backgrounds & Borders
+//
+
+@global-background:                             #292624;
+@global-light-background:                       #3a3633;
+@global-highlight-background:                   lighten(@global-light-background, 4%);
+@global-highlight-hover-background:             lighten(@global-highlight-background, 4%);
+@global-dark-background:                        #211f1e;
+
+@global-primary-background:                     #79d7d8;
+@global-primary-hover-background:               lighten(@global-primary-background, 4%);
+
+@global-info-background:                        #3dbce1;
+@global-success-background:                     #93c96c;
+@global-warning-background:                     #e17f3d;
+@global-danger-background:                      #e13d45;
+
+
+//
+// Component: Variables
+//
+// ========================================================================
+
+
+//
+// Base
+//
+
+@base-body-font-family:                         'Roboto', Helvetica, Arial, sans-serif;
+@base-heading-font-family:                      'Roboto', Helvetica, Arial, sans-serif;
+
+@base-code-color:                               #ca8266;
+
+
+//
+// Dropdown
+//
+
+@dropdown-background:                           @global-light-background;
+
+@dropdown-navbar-background:                    @dropdown-background;
+
+@dropdown-search-background:                    @dropdown-background;
+
+
+//
+// Navbar
+//
+
+@navbar-nav-font-family:                        'Roboto', Helvetica, Arial, sans-serif;
+
+@navbar-nav-hover-background:                   @global-light-background;
+
+
+//
+// Panel
+//
+
+@panel-box-primary-button-background:           #133434;
+@panel-box-primary-form-background:             #55b3b4;
+@panel-box-primary-form-placeholder-color:      #3e5959;
+
+
+//
+// Theme: Variables
+//
+// ========================================================================
+
+@theme-block-light-background:                  darken(@global-background, 3%);
+@theme-block-dark-background:                   darken(@global-background, 5%);
+@theme-block-primary-dark-background:           desaturate(darken(@global-primary-background, 4%), 8%);
+
+@theme-light-border:                            @global-border;
+
+@theme-fullscreen-color:                        @global-hover-color;
+
+@theme-nite-icon-border:                        @global-highlight-color;
+@theme-nite-icon-color:                         @global-highlight-color;
+@theme-nite-icon-hover-background:              @global-primary-background;
+@theme-nite-icon-hover-color:                   #3b3635;
+
+@theme-widgetkit-style:                         'dark';

@@ -1,0 +1,246 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+//
+// Component: Nav
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@nav-padding-vertical:                          5px;
+@nav-padding-horizontal:                        @global-margin;
+
+@nav-header-padding-vertical:                   @nav-padding-vertical;
+@nav-header-padding-horizontal:                 @nav-padding-horizontal;
+@nav-header-font-size:                          round(@global-font-size * 0.93); // 14px
+@nav-header-font-weight:                        @global-bold-font-weight;
+@nav-header-margin-top:                         @global-margin;
+
+@nav-divider-margin-horizontal:                 @nav-padding-horizontal;
+
+@nav-subtitle-font-size:                        round(@global-font-size * 0.8); // 12px
+@nav-subtitle-line-height:                      round(@nav-subtitle-font-size * 1.63); // 18px
+
+@nav-sub-padding-left:                          @nav-padding-horizontal;
+
+@nav-parent-icon-width:                         @global-line-height;
+
+@nav-side-color:                                @global-color;
+@nav-side-hover-background:                     @global-dark-background;
+@nav-side-hover-color:                          @global-hover-color;
+@nav-side-active-background:                    rgba(0,0,0,0);
+@nav-side-active-color:                         @global-link-color;
+@nav-side-header-color:                         @global-muted-color;
+@nav-side-divider-border:                       @global-border;
+@nav-side-divider-border-width:                 @global-border-width;
+@nav-side-nested-color:                         @global-muted-color;
+@nav-side-nested-hover-color:                   @global-hover-color;
+
+@nav-dropdown-color:                            @global-color;
+@nav-dropdown-hover-background:                 @global-primary-background;
+@nav-dropdown-hover-color:                      @global-primary-color;
+@nav-dropdown-header-color:                     @global-muted-color;
+@nav-dropdown-divider-border:                   @global-border;
+@nav-dropdown-divider-border-width:             @global-border-width;
+@nav-dropdown-nested-color:                     @global-muted-color;
+@nav-dropdown-nested-hover-color:               @global-hover-color;
+
+@nav-navbar-color:                              @global-color;
+@nav-navbar-hover-background:                   @global-primary-background;
+@nav-navbar-hover-color:                        @global-primary-color;
+@nav-navbar-header-color:                       @global-muted-color;
+@nav-navbar-divider-border:                     @global-border;
+@nav-navbar-divider-border-width:               @global-border-width;
+@nav-navbar-nested-color:                       @global-muted-color;
+@nav-navbar-nested-hover-color:                 @global-hover-color;
+
+@nav-offcanvas-color:                           @global-hover-color;
+@nav-offcanvas-hover-background:                lighten(@offcanvas-bar-background, 4%);
+@nav-offcanvas-hover-color:                     @global-highlight-color;
+@nav-offcanvas-active-background:               @global-primary-background;
+@nav-offcanvas-active-color:                    @global-primary-color;
+@nav-offcanvas-header-color:                    @global-muted-color;
+@nav-offcanvas-divider-border:                  lighten(@offcanvas-bar-background, 4%);
+@nav-offcanvas-divider-border-width:            @global-border-width;
+@nav-offcanvas-nested-color:                    @global-color;
+@nav-offcanvas-nested-hover-color:              @global-hover-color;
+
+//
+// New
+//
+
+@nav-dropdown-active-color:                     @global-link-color;
+@nav-dropdown-active-hover-color:               @global-primary-color;
+
+@nav-navbar-active-color:                       @global-link-color;
+@nav-navbar-active-hover-color:                 @global-primary-color;
+
+@nav-side-border-radius:                        @global-border-radius;
+
+
+// Sub-object: `uk-nav-header`
+// ========================================================================
+
+.hook-nav-header() {}
+
+
+// Sub-object: `uk-nav-divider`
+// ========================================================================
+
+.hook-nav-divider() {}
+
+
+// Sub-object: `uk-nav-sub`
+// ========================================================================
+
+.hook-nav-sub() {}
+
+
+// Modifier: `uk-nav-parent-icon`
+// ========================================================================
+
+.hook-nav-parent-icon() {}
+
+
+// Modifier `uk-nav-side`
+// ========================================================================
+
+//
+// Items
+//
+
+.hook-nav-side() {}
+
+// Hover
+.hook-nav-side-hover() { border-radius: @nav-side-border-radius; }
+
+// Active
+.hook-nav-side-active() {}
+
+//
+// Sub-object: `uk-nav-header`
+//
+
+.hook-nav-side-header() {}
+
+//
+// Sub-object: `uk-nav-divider`
+//
+
+.hook-nav-side-divider() {}
+
+
+// Modifier `uk-nav-dropdown`
+// ========================================================================
+
+//
+// Items
+//
+
+.hook-nav-dropdown() {}
+
+// Hover
+.hook-nav-dropdown-hover() {}
+
+//
+// Sub-object: `uk-nav-header`
+//
+
+.hook-nav-dropdown-header() {}
+
+//
+// Sub-object: `uk-nav-divider`
+//
+
+.hook-nav-dropdown-divider() {}
+
+
+// Modifier `uk-nav-navbar`
+// ========================================================================
+
+//
+// Items
+//
+
+.hook-nav-navbar() {}
+
+// Hover
+.hook-nav-navbar-hover() {}
+
+//
+// Sub-object: `uk-nav-header`
+//
+
+.hook-nav-navbar-header() {}
+
+//
+// Sub-object: `uk-nav-divider`
+//
+
+.hook-nav-navbar-divider() {}
+
+
+// Modifier `uk-nav-offcanvas`
+// ========================================================================
+
+.hook-nav-offcanvas-link() {}
+.hook-nav-offcanvas-link-hover() {}
+
+//
+// Items
+//
+
+.hook-nav-offcanvas() { text-transform: @global-text-transform; }
+
+// Hover
+.hook-nav-offcanvas-hover() {}
+
+// Active
+.hook-nav-offcanvas-active() {}
+
+//
+// Sub-object: `uk-nav-header`
+//
+
+.hook-nav-offcanvas-header() {}
+
+//
+// Sub-object: `uk-nav-divider`
+//
+
+.hook-nav-offcanvas-divider() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-nav-misc() {
+
+    /* uk-nav-dropdown active color */
+    .uk-nav-dropdown > li.uk-active > a {
+
+        color: @nav-dropdown-active-color;
+
+        &:hover { color: @nav-dropdown-active-hover-color; }
+
+    }
+
+    /* uk-nav-navbar active color */
+    .uk-nav-navbar > li.uk-active > a {
+
+        color: @nav-navbar-active-color;
+
+        &:hover { color: @nav-navbar-active-hover-color; }
+
+    }
+
+    /* uk-nav-side hover in uk-panel-box */
+    .uk-panel-box .uk-nav-side > li > a:hover,
+    .uk-panel-box .uk-nav-side > li > a:focus { border-radius: 0; }
+
+    /* uk-nav-side nested active color */
+    .uk-nav-side ul li.uk-active > a { color: @global-link-color; }
+
+}
