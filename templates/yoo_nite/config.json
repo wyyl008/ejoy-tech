@@ -36,7 +36,7 @@
 	"tracking_code": "",
 	"layouts": {
 		"default": {
-			"style": "blue",
+			"style": "default",
 			"sidebars": {
 				"sidebar-a": {
 					"width": "15",
@@ -1031,27 +1031,27 @@
 			"icon": "",
 			"subtitle": ""
 		},
-		"191": {
-			"icon": "",
-			"subtitle": ""
-		},
-		"192": {
-			"icon": "",
-			"subtitle": ""
-		},
-		"193": {
-			"icon": "",
-			"subtitle": ""
-		},
 		"194": {
 			"icon": "",
 			"subtitle": ""
 		},
-		"195": {
+		"196": {
 			"icon": "",
 			"subtitle": ""
 		},
-		"196": {
+		"215": {
+			"icon": "",
+			"subtitle": ""
+		},
+		"216": {
+			"icon": "",
+			"subtitle": ""
+		},
+		"217": {
+			"icon": "",
+			"subtitle": ""
+		},
+		"218": {
 			"icon": "",
 			"subtitle": ""
 		}

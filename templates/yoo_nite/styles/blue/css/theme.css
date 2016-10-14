@@ -7475,7 +7475,8 @@ html {
   left: 50%;
   width: 90px;
   height: 60px;
-  margin-top: -30px;
+  margin-top: -20px;
+  margin-left: 20px;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
