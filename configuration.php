@@ -4,7 +4,7 @@ class JConfig {
 	public $offline_message = '网站在维护中。<br /> 请稍候访问。';
 	public $display_offline_message = '1';
 	public $offline_image = '';
-	public $sitename = 'ejoy-tech China';
+	public $sitename = 'Ejoy Tech China';
 	public $editor = 'jce';
 	public $captcha = '0';
 	public $list_limit = '20';
@@ -43,8 +43,8 @@ class JConfig {
 	public $caching = '0';
 	public $cache_handler = 'file';
 	public $cachetime = '15';
-	public $MetaDesc = 'wechat steup 微信公众号建设';
-	public $MetaKeys = '';
+	public $MetaDesc = 'wechat steup maintenance digital marketing big data微信公众号建设 运维 数字营销 大数据挖掘';
+	public $MetaKeys = 'wechat steup maintenance digital marketing big data微信公众号建设 运维 数字营销 大数据挖掘';
 	public $MetaTitle = '1';
 	public $MetaAuthor = '1';
 	public $MetaVersion = '0';
