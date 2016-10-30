@@ -36,7 +36,7 @@
 	"tracking_code": "",
 	"layouts": {
 		"default": {
-			"style": "default",
+			"style": "blue",
 			"sidebars": {
 				"sidebar-a": {
 					"width": "15",
@@ -117,7 +117,7 @@
 			}
 		},
 		"frontpage": {
-			"style": "default",
+			"style": "blue",
 			"system_output": "0",
 			"sidebars": {
 				"sidebar-a": {
@@ -876,6 +876,20 @@
 				"medium": "1",
 				"small": "1"
 			}
+		},
+		"121": {
+			"class": "",
+			"panel": "",
+			"icon": "",
+			"badge": {
+				"type": "uk-panel-badge uk-badge",
+				"text": ""
+			},
+			"display": {
+				"large": "1",
+				"medium": "1",
+				"small": "1"
+			}
 		}
 	},
 	"menus": {
@@ -888,14 +902,6 @@
 		"102": {
 			"columns": "1",
 			"columnwidth": "",
-			"icon": "",
-			"subtitle": ""
-		},
-		"103": {
-			"icon": "",
-			"subtitle": ""
-		},
-		"104": {
 			"icon": "",
 			"subtitle": ""
 		},
@@ -987,50 +993,6 @@
 			"icon": "",
 			"subtitle": ""
 		},
-		"133": {
-			"icon": "",
-			"subtitle": ""
-		},
-		"134": {
-			"icon": "",
-			"subtitle": ""
-		},
-		"135": {
-			"icon": "",
-			"subtitle": ""
-		},
-		"136": {
-			"icon": "",
-			"subtitle": ""
-		},
-		"140": {
-			"icon": "",
-			"subtitle": ""
-		},
-		"141": {
-			"icon": "",
-			"subtitle": ""
-		},
-		"142": {
-			"icon": "",
-			"subtitle": ""
-		},
-		"143": {
-			"icon": "",
-			"subtitle": ""
-		},
-		"144": {
-			"icon": "",
-			"subtitle": ""
-		},
-		"189": {
-			"icon": "",
-			"subtitle": ""
-		},
-		"196": {
-			"icon": "",
-			"subtitle": ""
-		},
 		"215": {
 			"icon": "",
 			"subtitle": ""
@@ -1044,6 +1006,10 @@
 			"subtitle": ""
 		},
 		"218": {
+			"icon": "",
+			"subtitle": ""
+		},
+		"219": {
 			"icon": "",
 			"subtitle": ""
 		}

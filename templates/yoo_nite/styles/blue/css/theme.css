@@ -378,7 +378,11 @@ a:hover,
  * Emphasize
  */
 em {
+  /*
   color: #d77749;
+  */
+  color:#36b7d3;
+  
 }
 /*
  * Insert
